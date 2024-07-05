@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root to: 'topppages#index'
+  root to: 'toppages#index'
 end

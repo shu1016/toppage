@@ -1,18 +1,18 @@
 document.addEventListener("turbo:load", function() {
-  const modals = document.querySelectorAll('.js-modal');
-  const modalButtons = document.querySelectorAll('.js-modal-button');
-  const modalCloses = document.querySelectorAll('.js-close-button');
+  const topModals = document.querySelectorAll('.top-js-modal');
+  const topModalButtons = document.querySelectorAll('.top-js-modal-button');
+  const topModalCloses = document.querySelectorAll('.top-js-close-button');
 
-  modalButtons.forEach((modalButton, index) => {
-    modalButton.addEventListener('click', (e) => {
+  topModalButtons.forEach((topModalButton, index) => {
+    topModalButton.addEventListener('click', (e) => {
       e.preventDefault()
-      modals[index].classList.add('is-open');
+      topModals[index].classList.add('is-open');
     });
   });
 
-  modalCloses.forEach((modalClose, index) => {
-    modalClose.addEventListener('click', () => {
-      modals[index].classList.remove('is-open');
+  topModalCloses.forEach((topModalClose, index) => {
+    topModalClose.addEventListener('click', () => {
+      topModals[index].classList.remove('is-open');
     });
   });
 });
